@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__container">
+        <p class="main__header">Weather</p>
+        <div class="main__info">
+          <h1 class="main__temp">t℃</h1>
+          <p class="main__city_weather">Weather in area</p>
+          <button class="main__change_city">Change city</button>
+        </div>
+        <div class="main__find_hidden">
+          <input
+            class="main_input"
+            type="text"
+            placeholder="type your city here"
+          />
+          <button class="main__find_button">Find</button>
+        </div>
+        <div class="main_error_hide">
+          <h1 class="main_text_error">Ooops. Something went wrong.</h1>
+          <p class="main_info_error">Error info</p>
+          <button class="main_try">Try again</button>
+        </div>
+        <p class="main__footer">Designed by Kraun</p>
+      </div>
+    </main>
+    <script type="module" src="./src/app/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(151deg, #8e2de2 0%, #4a00e0 100%);
+}
+.main__container {
+  margin: 0 auto;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__header {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.main__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__info_hidden {
+  display: none;
+}
+.main__temp {
+  color: #fff;
+
+  /* Diplay/Bold/Heading-1 */
+  font-family: Inter;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.main__city_weather {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 150% */
+}
+.main__change_city {
+  color: rgba(255, 255, 255, 0.5);
+
+  /* Body/Italic */
+  font-family: Mulish;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28px; /* 164.706% */
+  text-decoration-line: underline;
+}
+.main__footer {
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  /* Lead/Text - Regular */
+  font-family: Inter;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 171.429% */
+}
+
+.main__find_hidden {
+  display: none;
+}
+
+.main__find {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_input {
+  width: 326px;
+  padding: 6px 70px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 180% */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+}
+.main__find_button {
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+  background: #fff;
+  color: #4c01e0;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 180% */
+  margin-top: 41px;
+}
+
+.main_error {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 180% */
+}
+.main__try_button {
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+  background: #fff;
+  color: #4c01e0;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 180% */
+  margin-top: 41px;
+}
+.main_error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_error_hide {
+  display: none;
+}
+.main_text_error {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 180% */
+}
+.main_info_error {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+
+  /* Body/Small */
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main_try {
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+  background: #fff;
+  color: #4c01e0;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 180% */
+  margin-top: 41px;
+}
