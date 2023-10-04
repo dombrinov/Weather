@@ -25,7 +25,8 @@ function findLocation() {
 
   async function error() {
     // если разрешение юзера не получено, то вывожу в текстконтент информацию об этом
-    temperature.textContent = "Не получается определить вашу геолокацию :(";
+    let weatherDataByIp = await getIp();
+    findTemp(weatherDataByIp);
   }
 }
 
@@ -99,4 +100,17 @@ async function tryAgain() {
   });
 }
 
+async function getIp() {
+  const response2 = await fetch(
+    `https://geo.ipify.org/api/v2/country,city?apiKey=at_GzZGRDWjHwiVMAsbyCbRtaRfPMenm`
+  );
+  const data2 = await response2.json();
+  const response3 = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${data2.location.city}&appid=bff51748a8973824609ac33d6b259bd2&units=metric`
+  );
+  const data3 = await response3.json();
+  return data3;
+}
+
 findLocation();
+
